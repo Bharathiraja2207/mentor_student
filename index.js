@@ -10,6 +10,7 @@ const PORT = 4008
 // const mongo_url = 'mongodb://127.0.0.1';
 
 const mongo_url =(process.env.mongo_url)
+// console.log(process.env.mongo_url);
 export const client = new MongoClient(mongo_url);
 await client.connect();
   console.log('mongo is connected!!');
